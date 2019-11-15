@@ -9,7 +9,9 @@ The original code stems from github.com/google/or-tools and was forked to github
 Requirements
 
 	- Go
-	- MinGW64 C++ compiler(this package was tested with TDM GCC, an installer can be found on http://tdm-gcc.tdragon.net/)
+	- MinGW64 C and C++ compiler
+
+Go is not compatible with Microsoft compilers. If you don't have a MinGW64 C and C++ compiler installed already, we recommend the "TDM64 bundle". Download the "TDM64 bundle" here https://sourceforge.net/projects/tdm-gcc/files/latest/download or via the official website http://tdm-gcc.tdragon.net/.
 
 Install it by running
 
