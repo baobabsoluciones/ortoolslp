@@ -39,6 +39,10 @@ If you install your compiled program on a customers system, you can put the EXE 
 Editing system environment variables on Windows is explained here:
   https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0
 
+## Examples
+
+After the installation you may run the examples in the directory `examples`.
+
 ## Troubleshooting
 
 \_gowraplp.dll, cplex1290.dll, scip.dll and gurobi81.dll depend on DLLs that are commonly included on most Windows installations today.
