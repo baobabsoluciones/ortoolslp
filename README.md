@@ -1,5 +1,5 @@
 # ortoolslp
-Go package to use the 'linear_solver' component of Google OR-Tools
+Go package to use the 'linear_solver' component of Google OR-Tools on Windows 10.
 
 It enables you to solve linear programming models with GLOP, CLP, CBC, SCIP, GLPK, CPLEX and Gurobi solvers via the Google OR-Tools API on Windows. It was tested on Windows 10 with x86_64 architecture.
 The compilation process is quite complex because it involves C++, SWIG, C and many tools more. To simplify the use of the library, this repository only contains the minimum binaries and Go-files you need to run and develop applications with ortoolslp.
