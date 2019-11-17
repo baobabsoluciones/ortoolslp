@@ -1,17 +1,17 @@
 # ortoolslp
-Go package to use the 'linear_solver' component of Google OR-Tools
+Go package to use the 'linear_solver' component of Google OR-Tools on Windows 10.
 
 It enables you to solve linear programming models with GLOP, CLP, CBC, SCIP, GLPK, CPLEX and Gurobi solvers via the Google OR-Tools API on Windows. It was tested on Windows 10 with x86_64 architecture.
 The compilation process is quite complex because it involves C++, SWIG, C and many tools more. To simplify the use of the library, this repository only contains the minimum binaries and Go-files you need to run and develop applications with ortoolslp.
 
-The original code stems from github.com/google/or-tools and was forked to github.com/baobabsoluciones/or-tools to work on an API that can be used with Go.
+The original code stems from [github.com/google/or-tools](https://github.com/google/or-tools) and was forked to [github.com/baobabsoluciones/or-tools](https://github.com/baobabsoluciones/or-tools) to work on an API that can be used with Go.
 
 ## Requirements
 
 	- Go
 	- MinGW64 C and C++ compiler
 
-Go is not compatible with Microsoft compilers. If you don't have a MinGW64 C and C++ compiler installed already, we recommend the "TDM64 bundle". Download the "TDM64 bundle" here https://sourceforge.net/projects/tdm-gcc/files/latest/download or via the official website http://tdm-gcc.tdragon.net/.
+Go is not compatible with Microsoft compilers. If you don't have a MinGW64 C and C++ compiler installed already, we recommend the "TDM64 bundle". Download the "TDM64 bundle" [here](https://sourceforge.net/projects/tdm-gcc/files/latest/download) or via the [official website](http://tdm-gcc.tdragon.net/).
 
 ## Installation
 
@@ -36,8 +36,7 @@ If you install your compiled program on a customers system, you can put the EXE 
 
 	C:\Users\YourUserName\go\bin
 
-Editing system environment variables on Windows is explained here:
-  https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0
+Editing system environment variables on Windows is explained [here](https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html).
 
 ## Examples
 
@@ -47,7 +46,4 @@ After the installation you may run the examples in the directory `examples`.
 
 \_gowraplp.dll, cplex1290.dll, scip.dll and gurobi81.dll depend on DLLs that are commonly included on most Windows installations today.
 
-If you get errors that mention ucrtbase.dll or MSVCP140.dll you should either update your Windows system or install:
-
-  Microsoft Visual C++ 2015 Redistributable Update 3 RC
-  https://www.microsoft.com/en-us/download/details.aspx?id=52685
+If you get errors that mention ucrtbase.dll or MSVCP140.dll you should either update your Windows system or install ["Microsoft Visual C++ 2015 Redistributable Update 3 RC"](https://www.microsoft.com/en-us/download/details.aspx?id=52685).
